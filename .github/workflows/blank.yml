@@ -30,3 +30,11 @@ jobs:
         with: 
           markdown-files: 2.1 Systems of Linear Equations.md  # or md_files/README.md
           output-dir: .
+    # commit changes and push
+      - name: Commit
+        run: |
+            git config --global user.name 'donghunp'
+            git config --global user.email 'donghunp1212@gmail.com'
+            git add *.md
+            git commit -m 'Render latex formulas'
+            git push origin || echo "No changes to commit"
