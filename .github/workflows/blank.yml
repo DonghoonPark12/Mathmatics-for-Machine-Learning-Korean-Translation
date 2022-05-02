@@ -28,7 +28,7 @@ jobs:
       - name: markdown-latex-math-render
         uses: kinglittleq/markdown-latex-math-render@v0.1
         with: 
-          markdown-files: 2.1 Systems of Linear Equations.md  # or md_files/README.md
+          markdown-files: ./*.md  # or md_files/README.md
           output-dir: .
     # commit changes and push
       - name: Commit
