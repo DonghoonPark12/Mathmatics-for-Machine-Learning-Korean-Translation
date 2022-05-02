@@ -26,9 +26,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: markdown-latex-math-render
-        uses: KinglittleQ/markdown-latex-math-render@v0.1
-        
       - uses: kinglittleq/markdown-latex-math-render@v0.1
-        with:
-          markdown-files: ./*.md  # or md_files/README.md
+        with: 
+          markdown-files: 2.1 Systems of Linear Equations.md  # or md_files/README.md
           output-dir: .
