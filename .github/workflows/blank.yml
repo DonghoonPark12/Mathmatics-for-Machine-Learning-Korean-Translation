@@ -27,3 +27,8 @@ jobs:
       
       - name: markdown-latex-math-render
         uses: KinglittleQ/markdown-latex-math-render@v0.1
+        
+      - uses: kinglittleq/markdown-latex-math-render@v0.1
+        with:
+          markdown-files: ./*.md  # or md_files/README.md
+          output-dir: .
